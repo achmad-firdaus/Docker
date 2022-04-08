@@ -2,8 +2,8 @@
 All Abound Docker
 
 #### LIST
-- [Introduction 👻](#introduction-)
-- [Merge 👻](#merge-)
+- [Help 👻](#introduction-)
+- [Mysql 👻](#mysql-)
 - [Log 👻](#log-)
 - [Alias 👻](#alias-)
 - [Delete 👻](#delete-)
@@ -11,24 +11,24 @@ All Abound Docker
 - [Referance 👻](#referance-)
 
 #### INTRODUCTION 👻
-if your place or company not yet used git and than you should to make 3 Branch for compare all source code:
-1.  ![](https://img.shields.io/badge/-Production-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
-2.  ![](https://img.shields.io/badge/Stag-Trial-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2ba9bc)
-3.  ![](https://img.shields.io/badge/-Development-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=bc2b2b)
 
-Why do i have to make it 3 ?
-1.  ![](https://img.shields.io/badge/-Production-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a) => Used for website that are currently running
-2.  ![](https://img.shields.io/badge/Stag-Trial-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2ba9bc) => For make merge branch Development into Production
-3.  ![](https://img.shields.io/badge/-Development-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=bc2b2b) => Used to write code for CR or bug fixes
+    docker images   // check images installed
+    docker ps   // check run container
+    docker ps -a    //check hostory run container stoped
+    
+    docker stop [container image/ container name]   // stop run container
+    
+    docker container prune  // remove old container
+    docker system prune // remove all stoped container
+    
+    -d  // run in background
 
-For init git folder:
+#### MYSQL 👻
 
-    git init
-
-For add all folder and file:
-
-    // remove cache git rm -rf --cached .
-    git add .
+    sudo docker run --name=[name container] -p [local port]:[docker port] [option] [image]
+    sudo docker run --name=MySql -p 33061:3306 -e MYSQL_ROOT_PASSWORD=1  mysql
+    
+    sudo docker exec -it MySql2 mysql -uroot -p // enter in mysql
 
 And you mush commit first:
     
