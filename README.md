@@ -35,9 +35,14 @@ All Abound Docker
     sudo docker logs -f apache-php56
 
 #### DOCKERFILE 👻
-### My DockerFile Linux Bionic Php5.6
+### Build My Dockerfile
 
-    sudo docker run -it --name [name container] -v [local folder:docker folder] [image]
+    sudo docker build -t [repo name]:[tag name] -f [filename] [directory filename]
+    sudo docker build -t bionic_php56:v1 -f dockerfileBionicPhp56 /var/www/html/php56/
+    
+### RUN My DockerFile
+
+    sudo docker run -it --name [container name] -v [local folder:docker folder] [image]
     sudo docker run -it --name bionicphp56 -v /var/www/html/php56:/var/www/html 99918e1d6e64
 
 #### DELETE 👻
