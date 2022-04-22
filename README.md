@@ -4,6 +4,7 @@ All Abound Docker
 #### LIST
 - [Help 👻](#introduction-)
 - [Mysql 👻](#mysql-)
+- [OS 👻](#os-)
 - [Log 👻](#log-)
 - [Dockerfile 👻](#dockerfile-)
 - [Delete 👻](#delete-)
@@ -28,6 +29,10 @@ All Abound Docker
     sudo docker run --name=MySql -p 33061:3306 -e MYSQL_ROOT_PASSWORD=1  mysql
     
     sudo docker exec -it MySql2 mysql -uroot -p // enter in mysql
+
+#### OS 👻
+
+    sudo docker exec -it [container name] bash
 
 #### LOG 👻
 
