@@ -8,8 +8,6 @@ All Abound Docker
 - [Log 👻](#log-)
 - [Dockerfile 👻](#dockerfile-)
 - [Delete 👻](#delete-)
-- [Show 👻](#show-)
-- [Referance 👻](#referance-)
 
 #### INTRODUCTION 👻
 
@@ -63,12 +61,4 @@ Delete Container:
     docker system prune // remove all stoped container
 
 
-#### SHOW 👻
-Show existing remote url:
-    
-    git remote show origin
-    OR
-    git remote -v
 
-#### REFERANCE 👻
-[Documentation](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
