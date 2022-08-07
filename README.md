@@ -51,8 +51,8 @@ All Abound Docker
 #### DELETE 👻
 - Delete Image:
 
-    sudo docker image rm [image]
-    sudo docker image rm 2f938b337df3
+      sudo docker image rm [image]
+      sudo docker image rm 2f938b337df3
 
 - Delete Container:
   
