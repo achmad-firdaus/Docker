@@ -49,16 +49,20 @@ All Abound Docker
     sudo docker run -it --name bionicphp56 -v /var/www/html/php56:/var/www/html 99918e1d6e64
 
 #### DELETE 👻
-Delete Image:
+- Delete Image:
 
     sudo docker image rm [image]
     sudo docker image rm 2f938b337df3
 
-Delete Container:
-    
-    docker container prune  // remove old container
-    OR
-    docker system prune // remove all stoped container
+- Delete Container:
+  
+    - Delete All Container    
 
+          docker container prune  // remove old container
+          OR
+          docker system prune // remove all stoped container
 
+    - Delete Spesific Container   
+
+          docker rm [Container ID]
 
